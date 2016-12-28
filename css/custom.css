@@ -1,0 +1,16 @@
+
+input, a, textarea, button{
+    outline: 0 !important;
+}
+
+body{
+    background-color: rgb(247,247,247) !important;
+}
+
+header a.brand img {
+    height: auto !important;
+}
+
+#send{
+    background-color: #07a !important;
+}

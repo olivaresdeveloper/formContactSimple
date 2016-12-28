@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="./css/core.css">
+    <link rel="stylesheet" type="text/css" href="./css/elements.css">
+    <link rel="stylesheet" type="text/css" href="./css/iconStyle.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+    <!-- <link rel="icon" type="image/png" href="./favicon.ico?version=4"> -->
+    <!-- <link rel="shortcut icon" href="favicon.ico?version=4" type="image/x-icon"/> -->
+    <meta name="keywords" content="">
+    <meta name="author" content="Company">
+
+
+  </head>
+  <body class="preload">
+    <div class="container-fluid">
+      <header>
+        <div class="container-fluid">
+            <!-- <div class="col-md-12 text-center"><a href="./" class=""><img alt="" src="#"></a> -->
+            </div>
+        </div>
+      </header>
+      <div class="container-fluid fadein">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="text-center intro">
+              <h1 class="typed">Write me</h1>
+            </div>
+            <div class="text-center intro">
+                <p>
+                    Para pedidos completa el siguiente formulario
+                </p>
+            </div>
+            <form id="form" action="./php/mail.php" class="form mt-md">
+              <label>Cual es tu Nombre? *</label>
+              <input required type="text" name="nombre" class="form-control">
+              <label>Numero de Telefono</label>
+              <input type="text" name="telefono" class="form-control">
+              <label>Correo *</label>
+              <input required type="email" name="correo" class="form-control">
+              <label>Dime que necesitas *</label>
+              <textarea required name="mensaje" class="form-control"></textarea>
+              <button id="send" type="submit" class="btn btn-default">Enviar Mensaje</button><span class="p-md">* Estas Campos son requeridos</span>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 text-center">
+                <span>COMPANY &copy; Todos los derechos reservados.
+                    <a href="#" style="text-decoration:none;"> <span class="social icon-facebook2"></span></a>
+                    <a href="#" style="text-decoration:none;"> <span class="social icon-twitter"></span></a>
+                    <a href="#" style="text-decoration:none;"> <span class="social icon-youtube"></span></a>
+                    <a href="#" style="text-decoration:none;"> <span class="social icon-instagram"></span></a>
+                </span>
+                <br/>
+                <span>
+                    Telefonos: ###-######
+                </span>
+                </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- The type animation script-->
+    <script src="./js/vendor.js"></script>
+    <script src="./js/functions.js"></script>
+    <script>$(function(){$(".typed").typed({strings: ["Write me, please.", "Hola", "こんにちは", "Ciao", "Aloha", "Hallo"],typeSpeed: 130,loop: true  });});</script>
+  </body>
+</html>
